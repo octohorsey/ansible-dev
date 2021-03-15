@@ -43,4 +43,4 @@ RUN chown 1001:0 $HOME/.ssh
 
 USER default
 
-CMD ["sleep infinity"]
+CMD exec /bin/sh -c "trap : TERM INT; sleep 9999999999d & wait"
