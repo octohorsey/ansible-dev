@@ -42,3 +42,5 @@ RUN mkdir -p $HOME/.ssh
 RUN chown 1001:0 $HOME/.ssh
 
 USER default
+
+CMD ["sleep infinity"]
