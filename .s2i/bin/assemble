@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "-------------- Executing the 'assemble' script -------------------"
+
+S2I_PATH=/usr/libexec/s2i
+S2I_BIN_PATH=$S2I_PATH/bin
+S2I_SRC_PATH=$S2I_PATH/src
+HOME=/home/jenkins
+
+cp -rf $S2I_SRC_PATH/home-files/* $HOME/
+cp $S2I_SRC_PATH/ssh-key/id_rsa $HOME/.ssh/id_rsa
+
+chown 1001 $HOME/.ssh/id_rsa

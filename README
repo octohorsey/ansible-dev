@@ -1,0 +1,3 @@
+Dockerfile to create container with Redhat Openshift OC command=line tool, vim, git, and ansible.
+
+Meant to be deployed to openshift.

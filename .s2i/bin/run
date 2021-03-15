@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "----------------- Executing the 'run' script for s2i ---------------------"
